@@ -1,0 +1,62 @@
+html,
+body {
+  font-family: "Inter", sans-serif;
+  background: #f6f3ec;
+}
+.font-display {
+  font-family: "Fraunces", serif;
+}
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.stub-wrap {
+  position: relative;
+  margin: 0 -1.75rem;
+  padding: 0 1.75rem;
+}
+.stub-line {
+  border-top: 2px dashed rgba(255, 255, 255, 0.22);
+  position: relative;
+}
+.stub-notch {
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: #1c2333;
+  border-radius: 9999px;
+  transform: translateY(-50%);
+}
+.stub-notch.left {
+  left: -11px;
+}
+.stub-notch.right {
+  right: -11px;
+}
+
+.scan-line {
+  animation: scanmove 2.2s ease-in-out infinite;
+}
+@keyframes scanmove {
+  0% {
+    top: 8%;
+  }
+  50% {
+    top: 88%;
+  }
+  100% {
+    top: 8%;
+  }
+}
+.fade-slide-enter {
+  transition: all 0.28s ease;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
